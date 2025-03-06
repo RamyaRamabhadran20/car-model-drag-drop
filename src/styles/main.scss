@@ -1,0 +1,41 @@
+@import 'buttons';
+@import 'layout';
+@import 'variables';
+
+.car-list{
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+
+    .draggable-car {
+        background: $primary-color;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        cursor: grab;
+        border-radius: 4px;
+      }
+}
+
+.brand-drop {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+    transition: 0.3s ease-in-out; // Smooth transition effect
+
+    &.highlight {
+        border-color: green;
+        background-color: #eaffea; // Light green background for visibility
+    }
+}
+.error-message {
+    color: $error-color;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

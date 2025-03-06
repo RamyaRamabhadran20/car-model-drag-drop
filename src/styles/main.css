@@ -1,0 +1,54 @@
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.car-list {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+.car-list .draggable-car {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  cursor: grab;
+  border-radius: 4px;
+}
+
+.brand-drop {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  min-width: 300px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.brand-drop.highlight {
+  border-color: green;
+  background-color: #eaffea;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
