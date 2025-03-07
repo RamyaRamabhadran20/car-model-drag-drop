@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/make-model-drag-and-drop/static/css/main.fe90d798.css",
-    "main.js": "/make-model-drag-and-drop/static/js/main.b9d24fab.js",
-    "static/js/453.53e1786d.chunk.js": "/make-model-drag-and-drop/static/js/453.53e1786d.chunk.js",
-    "index.html": "/make-model-drag-and-drop/index.html",
-    "main.fe90d798.css.map": "/make-model-drag-and-drop/static/css/main.fe90d798.css.map",
-    "main.b9d24fab.js.map": "/make-model-drag-and-drop/static/js/main.b9d24fab.js.map",
-    "453.53e1786d.chunk.js.map": "/make-model-drag-and-drop/static/js/453.53e1786d.chunk.js.map"
+    "main.css": "/make-model-drag-drop/static/css/main.fe90d798.css",
+    "main.js": "/make-model-drag-drop/static/js/main.7e7860b5.js",
+    "static/js/453.53e1786d.chunk.js": "/make-model-drag-drop/static/js/453.53e1786d.chunk.js",
+    "index.html": "/make-model-drag-drop/index.html",
+    "main.fe90d798.css.map": "/make-model-drag-drop/static/css/main.fe90d798.css.map",
+    "main.7e7860b5.js.map": "/make-model-drag-drop/static/js/main.7e7860b5.js.map",
+    "453.53e1786d.chunk.js.map": "/make-model-drag-drop/static/js/453.53e1786d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe90d798.css",
-    "static/js/main.b9d24fab.js"
+    "static/js/main.7e7860b5.js"
   ]
 }
