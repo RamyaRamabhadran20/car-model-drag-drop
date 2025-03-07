@@ -1,41 +1,114 @@
-@import 'buttons';
-@import 'layout';
-@import 'variables';
+/* Import Bootstrap */
+@import '~bootstrap/scss/bootstrap';
 
-.car-list{
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Drag & Drop Container */
+.drag-drop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Car List */
+.car-list {
     background: white;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 80%;
+    max-width: 500px;
     text-align: center;
-
-    .draggable-car {
-        background: $primary-color;
-        color: white;
-        padding: 10px;
-        margin: 5px;
-        cursor: grab;
-        border-radius: 4px;
-      }
+    font-size: 1.2rem;
+    border: 2px solid #007bff;
+    margin-bottom: 20px;
 }
 
+/* Draggable Car Items */
+.draggable-car {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: grab;
+    border-radius: 4px;
+    display: inline-block; /* Allow multiple cars in a row */
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+}
+
+/* Drop Zone Styles */
 .brand-drop {
     border: 2px dashed #ccc;
     padding: 20px;
-    min-width: 300px;
+    min-width: 150px;
     text-align: center;
-    transition: 0.3s ease-in-out; // Smooth transition effect
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    &:nth-child(even) {
+        background-color: #f8f9fa;
+    }
 
     &.highlight {
         border-color: green;
-        background-color: #eaffea; // Light green background for visibility
+        background-color: palegreen;
+        transform: scale(1.05);
+
+        &:hover {
+            padding: 50px; // Increase padding when dragging over
+        }
+    }
+
+    &:active {
+        transform: scale(1.1);
     }
 }
+
+/* Error Message */
 .error-message {
-    color: $error-color;
+    color: #ff4d4d;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
-  }
-  
+    padding: 10px;
+    border: 1px solid #ff4d4d;
+    background-color: #ffe6e6;
+}
+
+/* JSON Output */
+pre {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+    .col-md-6 {
+        width: 100%; /* Make each section full-width */
+    }
+}

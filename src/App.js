@@ -6,7 +6,7 @@ import './styles/main.scss';
 function App(){
   return(
     <div className="App">
-      <h1>Car Model Drag-Drop</h1>
+      <center><h1>Car Model Drag-Drop</h1></center>
       <DragDropContainer></DragDropContainer>
     </div>
   );
